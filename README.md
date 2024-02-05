@@ -1,4 +1,3 @@
 # RCRA
 Trabajo RCR
-Github
 
