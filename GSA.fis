@@ -15,9 +15,9 @@ DefuzzMethod='centroid'
 Name='pH'
 Range=[6.8 7.8]
 NumMFs=3
-MF1='Bajo':'trapmf',[6.8 6.8 7.1 7.35]
-MF2='Normal':'trapmf',[7.1 7.35 7.45 7.7]
-MF3='Alto':'trapmf',[7.45 7.7 7.8 7.8]
+MF1='Bajo':'trapmf',[6.8 6.8 7.2 7.35]
+MF2='Normal':'trapmf',[7.2 7.35 7.45 7.6]
+MF3='Alto':'trapmf',[7.45 7.6 7.8 7.8]
 
 [Input2]
 Name='PCO2'
