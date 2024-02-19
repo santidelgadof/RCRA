@@ -1,5 +1,5 @@
 [System]
-Name='GAS'
+Name='GSA'
 Type='mamdani'
 Version=2.0
 NumInputs=3
@@ -37,35 +37,35 @@ MF3='Alto':'trapmf',[26 35 40 40]
 
 [Output1]
 Name='Metabolic Situation'
-Range=[0 1]
+Range=[0 100]
 NumMFs=3
-MF1='mf1':'trimf',[-0.416666666666667 0 0.416666666666667]
-MF2='mf2':'trimf',[0.0833333333333333 0.5 0.916666666666667]
-MF3='mf3':'trimf',[0.583333333333333 1 1.41666666666667]
+MF1='Acidosis':'trapmf',[0 0 20 40]
+MF2='No_Anormalidad':'trapmf',[20 40 60 80]
+MF3='Alaclosis':'trapmf',[60 80 100 100]
 
 [Output2]
 Name='Respiratory Situation'
-Range=[0 1]
+Range=[0 100]
 NumMFs=3
-MF1='mf1':'trimf',[-0.416666666666667 0 0.416666666666667]
-MF2='mf2':'trimf',[0.0833333333333333 0.5 0.916666666666667]
-MF3='mf3':'trimf',[0.583333333333333 1 1.41666666666667]
+MF1='Acidosis':'trapmf',[0 0 20 40]
+MF2='No_Anormalidad':'trapmf',[20 40 60 80]
+MF3='Alcalosis':'trapmf',[60 80 100 100]
 
 [Output3]
 Name='Metabolic Compensation'
-Range=[0 1]
+Range=[0 100]
 NumMFs=3
-MF1='mf1':'trimf',[-0.416666666666667 0 0.416666666666667]
-MF2='mf2':'trimf',[0.0833333333333333 0.5 0.916666666666667]
-MF3='mf3':'trimf',[0.583333333333333 1 1.41666666666667]
+MF1='mf1':'trimf',[-41.6666666666667 0 41.6666666666667]
+MF2='mf2':'trimf',[8.33333333333334 50 91.6666666666667]
+MF3='mf3':'trimf',[58.3333333333333 100 141.666666666667]
 
 [Output4]
 Name='Respiratory Compensation'
-Range=[0 1]
+Range=[0 100]
 NumMFs=3
-MF1='mf1':'trimf',[-0.416666666666667 0 0.416666666666667]
-MF2='mf2':'trimf',[0.0833333333333333 0.5 0.916666666666667]
-MF3='mf3':'trimf',[0.583333333333333 1 1.41666666666667]
+MF1='mf1':'trimf',[-41.6666666666667 0 41.6666666666667]
+MF2='mf2':'trimf',[8.33333333333334 50 91.6666666666667]
+MF3='mf3':'trimf',[58.3333333333333 100 141.666666666667]
 
 [Rules]
 1 1 1, 1 1 1 1 (1) : 1
