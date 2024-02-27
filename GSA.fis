@@ -41,11 +41,11 @@ Range=[0 100]
 NumMFs=7
 MF1='Metabolic Acidosis Acute':'trapmf',[0 0 1.389 12.5]
 MF2='Metabolic Acidosis Parcial_Compensated':'trapmf',[4.167 15.28 18.06 29.17]
-MF3='Normal':'trapmf',[20.83 31.94 34.72 45.83]
-MF4='Metabolic Alcalosis Parcial_Compensated':'trapmf',[37.5 48.61 51.39 62.5]
-MF5='Metabloic Alcalosis Acute':'trapmf',[54.17 65.28 68.06 79.17]
-MF6='Metabolic Alcalosis Compensated':'trapmf',[70.83 81.94 84.72 95.83]
-MF7='Metabolic Acidosis Compensated':'trapmf',[87.5 98.61 100 100]
+MF3='Metabolic Acidosis Compensated':'trapmf',[20.83 31.94 34.72 45.83]
+MF4='Normal':'trapmf',[37.5 48.61 51.39 62.5]
+MF5='Metabolic Alcalosis Compensated':'trapmf',[54.17 65.28 68.06 79.17]
+MF6='Metabolic Alcalosis Parcial_Compensated':'trapmf',[70.83 81.94 84.72 95.83]
+MF7='Metabolic Alcalosis Acute':'trapmf',[87.5 98.61 100 100]
 
 [Output2]
 Name='Respiration'
@@ -53,27 +53,28 @@ Range=[0 100]
 NumMFs=7
 MF1='Respiratory Acidosis Acute':'trapmf',[0 0 1.389 12.5]
 MF2='Respiratory Acidosis Parcial_Compensated':'trapmf',[4.167 15.28 18.06 29.17]
-MF3='Normal':'trapmf',[20.83 31.94 34.72 45.83]
-MF4='Respiratory Alcalosis Parcial_Compensated':'trapmf',[37.5 48.61 51.39 62.5]
-MF5='Respiratory Alcalosis Acute':'trapmf',[54.17 65.28 68.06 79.17]
-MF6='Respiratory Alcalosis Compensated':'trapmf',[70.83 81.94 84.72 95.83]
-MF7='Respiratory Acidosis Compensated':'trapmf',[87.5 98.61 100 100]
+MF3='Respiratory Acidosis Compnesated':'trapmf',[20.83 31.94 34.72 45.83]
+MF4='Normal':'trapmf',[37.5 48.61 51.39 62.5]
+MF5='Respiratory Alcalosis Compensated':'trapmf',[54.17 65.28 68.06 79.17]
+MF6='Respiratory Alcalosis Parcial_Compensated':'trapmf',[70.83 81.94 84.72 95.83]
+MF7='Respiratory Alcalosis Acute':'trapmf',[87.5 98.61 100 100]
 
 [Rules]
 1 1 1, 2 0 (1) : 1
-2 1 1, 3 6 (1) : 1
-3 1 1, 0 4 (1) : 1
+2 1 1, 3 5 (1) : 1
+3 1 1, 0 6 (1) : 1
 1 2 1, 1 0 (1) : 1
-2 2 1, 3 3 (1) : 1
-2 3 1, 3 3 (1) : 1
+2 2 1, 4 4 (1) : 1
+2 3 1, 4 4 (1) : 1
 3 3 1, 0 1 (1) : 1
-2 1 2, 3 3 (1) : 1
-3 1 2, 0 5 (1) : 1
-2 2 2, 3 3 (1) : 1
+2 1 2, 4 4 (1) : 1
+3 1 2, 0 7 (1) : 1
+2 2 2, 4 4 (1) : 1
 1 3 2, 0 1 (1) : 1
-2 3 2, 3 3 (1) : 1
-2 2 3, 3 3 (1) : 1
-3 2 3, 5 0 (1) : 1
+2 3 2, 4 4 (1) : 1
+2 2 3, 4 4 (1) : 1
+3 2 3, 7 0 (1) : 1
 1 3 3, 0 2 (1) : 1
 2 3 3, 3 3 (1) : 1
-3 3 3, 4 0 (1) : 1
+3 3 3, 6 0 (1) : 1
+
